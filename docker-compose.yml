@@ -1,0 +1,36 @@
+﻿version: "3.9"
+services:
+  project-service:
+    build: ./services/ProjectService
+    ports:
+      - "8081:8080"
+
+  task-service:
+    build: ./services/TaskService
+    ports:
+      - "8082:8080"
+
+  sprint-service:
+    build: ./services/SprintService
+    ports:
+      - "8083:8080"
+
+  user-service:
+    build: ./services/UserService
+    ports:
+      - "8084:8080"
+
+  notification-service:
+    build: ./services/NotificationService
+    ports:
+      - "8085:8080"
+
+  analytics-service:
+    build: ./services/AnalyticsService
+    ports:
+      - "8086:8080"
+
+  ai-service:
+    build: ./services/AIService
+    ports:
+      - "8087:8080"
